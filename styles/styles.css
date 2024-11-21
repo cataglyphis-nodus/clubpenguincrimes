@@ -111,7 +111,7 @@ h4 {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 735px) {
     .child {
         flex-direction: column;
         background-image: none;
