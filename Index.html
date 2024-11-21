@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Club Penguin Crimes</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="scripts/scripts.js">
+    <script src="scripts/scripts.js" defer></script>
+    <style>
+        #button {
+            background-image: url(styles/images/help-icon.png) !important;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: transparent;
+            width: 45px;
+            height: 45px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #note-container {
+            display: none; /* Initially hidden */
+            background-color: #333; /* Dark background for contrast */
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            position: fixed;
+            margin-left: 35%;
+            margin-right: 35%;
+            margin-top: 60vh;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="child">
+        <div class="title">
+            <h1 style="color: white;">Club Penguin</h1>
+            <h2 style="color: #FFDE59;">Crimes</h2>
+        </div>
+        
+        <div class="search-container">
+            <button id="button" type="button"></button>
+            <input type="search" id="searchInput" placeholder="SEARCH">
+        </div>
+        <h3>Do you remember someone from armies you loved? 
+            Search their old username and find out what they once commented!</h3>
+        <h4>Useful tool for those who simply want to reminisce 
+            on simpler... stupider times</h4>
+    </div>
+    <div id="note-container">
+        <p>Note: Search is case sensitive, so please use correct uppercase and lowercase for usernames.
+            If the username you search for does not appear they may not be in the database. 
+        </p>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

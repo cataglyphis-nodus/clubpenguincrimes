@@ -1,0 +1,125 @@
+@font-face {
+    font-family: Cheese;
+    src: url(fonts/MouldyCheeseRegular-WyMWG.ttf);
+}
+
+body {
+    margin: 0;
+    height: 100vh;  /* Ensure the body takes up full viewport height */
+    display: flex;  /* Use flexbox for centering the entire page */
+    justify-content: center;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    font-family: Cheese;
+    background-color: #2596BE; /* Add a fallback background color */
+}
+
+
+h1, h2 {
+    font-family: Cheese;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1px #38B6FF;
+    font-size: 5vh;
+    margin: 0.938rem 0;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    margin: 1.25rem 0;
+    width: 100%;
+    max-width: 31.25rem;
+    margin-right: 1.875rem;
+    flex-direction: row-reverse;
+}
+
+#searchButton {
+    background-color: #FFDE59; /* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 0.625rem; /* Rounded corners */
+    padding: 0.625rem 1.25rem; /* Padding for size */
+    font-family: Cheese; /* Custom font */
+    font-size: 1.2em; /* Match input font size */
+    color: #2596BE; /* Text color */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#searchButton:hover {
+    background-color: #FFC107; /* Change background color on hover */
+}
+
+#searchInput {
+    border-radius: 0.625rem;
+    border: none;
+    padding: 0.625rem;
+    margin-left: 5rem;
+    font-family: Cheese;
+    font-size: 1.2em;
+    text-align: center;
+    width: 80%;
+    max-width: 18.75rem;
+}
+
+#searchInput::placeholder {
+    font-family: Cheese;
+    text-align: center;
+    opacity: 0.5;
+}
+
+/* Ensure the child container aligns all its content in the center */
+.child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    width: 100%; /* Full width */
+    max-width: 50rem; /* Optional: restrict maximum width */
+    padding: 1.25rem;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    text-align: center;
+}
+
+
+h3 {
+    font-family: Cheese;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 0.313rem 0;
+    font-size: 2.5vh;
+}
+
+h4 {
+    font-family: Cheese;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin: 0.313rem 0;
+    color: white;
+    opacity: 70%;
+    font-size: 2vh;
+}
+
+.title {
+    background-image: url(images/Behind\ Text\ Clouds.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .child {
+        flex-direction: column;
+        background-image: none;
+    }
+
+    #note-container {
+        margin: 100%;
+    }
+}
+
+
